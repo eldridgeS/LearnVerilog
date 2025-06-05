@@ -1,0 +1,11 @@
+Time resolution is 1 ps
+Time	cin	a	b	sum	cout
+                   0	0	0000	0000	0000	0
+               10000	0	0101	0011	1000	0
+               20000	0	1111	0001	0000	1
+               30000	0	1000	1000	0000	1
+               40000	1	0011	0001	0101	0
+               50000	1	1111	1111	1111	1
+               60000	0	1010	0101	1111	0
+               70000	1	0000	0000	0001	0
+$finish called at time : 80 ns : File "C:/Users/eldri/OneDrive/Documents/Georgia Tech/Sharc Lab/Learn_Verilog/adder/adder.srcs/sim_1/new/tb_four_bit_adder.v" Line 51
