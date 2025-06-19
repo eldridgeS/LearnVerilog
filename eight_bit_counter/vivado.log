@@ -1,0 +1,287 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Tue Jun 17 04:22:29 2025
+# Process ID         : 17400
+# Current directory  : C:/Users/eldri/OneDrive/Documents/Georgia Tech/Sharc Lab/Learn_Verilog/eight_bit_counter
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent5756 C:\Users\eldri\OneDrive\Documents\Georgia Tech\Sharc Lab\Learn_Verilog\eight_bit_counter\eight_bit_counter.xpr
+# Log file           : C:/Users/eldri/OneDrive/Documents/Georgia Tech/Sharc Lab/Learn_Verilog/eight_bit_counter/vivado.log
+# Journal file       : C:/Users/eldri/OneDrive/Documents/Georgia Tech/Sharc Lab/Learn_Verilog/eight_bit_counter\vivado.jou
+# Running On         : elsu
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : AMD Ryzen 9 8945HS w/ Radeon 780M Graphics
+# CPU Frequency      : 3992 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16422 MB
+# Swap memory        : 18253 MB
+# Total Virtual      : 34675 MB
+# Available Virtual  : 16027 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/eldri/OneDrive/Documents/Georgia Tech/Sharc Lab/Learn_Verilog/eight_bit_counter/eight_bit_counter.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/eldri/OneDrive/Documents/Georgia Tech/Sharc Lab/Learn_Verilog/eight_bit_counter'
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/eldri/OneDrive/Documents/Georgia Tech/Sharc Lab/Learn_Verilog/eight_bit_counter/eight_bit_counter.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:06 . Memory (MB): peak = 1124.031 ; gain = 27.039
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'counter'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/eldri/OneDrive/Documents/Georgia Tech/Sharc Lab/Learn_Verilog/eight_bit_counter/eight_bit_counter.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'counter' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/eldri/OneDrive/Documents/Georgia Tech/Sharc Lab/Learn_Verilog/eight_bit_counter/eight_bit_counter.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj counter_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/eldri/OneDrive/Documents/Georgia Tech/Sharc Lab/Learn_Verilog/eight_bit_counter/eight_bit_counter.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot counter_behav xil_defaultlib.counter xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot counter_behav xil_defaultlib.counter xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/eldri/OneDrive/Documents/Georgia Tech/Sharc Lab/Learn_Verilog/eight_bit_counter/eight_bit_counter.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "counter_behav -key {Behavioral:sim_1:Functional:counter} -tclbatch {counter.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source counter.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1163.254 ; gain = 18.555
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'counter_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 1163.254 ; gain = 20.906
+add_force {/counter/clk} -radix hex {1 0ns} {0 50000ps} -repeat_every 100000ps
+add_force {/counter/mode} -radix hex {1 0ns}
+run all
+run: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 2218.215 ; gain = 0.000
+run all
+run: Time (s): cpu = 00:00:21 ; elapsed = 00:00:11 . Memory (MB): peak = 2225.684 ; gain = 3.242
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'counter'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/eldri/OneDrive/Documents/Georgia Tech/Sharc Lab/Learn_Verilog/eight_bit_counter/eight_bit_counter.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'counter' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/eldri/OneDrive/Documents/Georgia Tech/Sharc Lab/Learn_Verilog/eight_bit_counter/eight_bit_counter.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj counter_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/eldri/OneDrive/Documents/Georgia Tech/Sharc Lab/Learn_Verilog/eight_bit_counter/eight_bit_counter.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot counter_behav xil_defaultlib.counter xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot counter_behav xil_defaultlib.counter xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/eldri/OneDrive/Documents/Georgia Tech/Sharc Lab/Learn_Verilog/eight_bit_counter/eight_bit_counter.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "counter_behav -key {Behavioral:sim_1:Functional:counter} -tclbatch {counter.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source counter.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'counter_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:12 . Memory (MB): peak = 2231.152 ; gain = 0.000
+add_force {/counter/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+run all
+run: Time (s): cpu = 00:02:24 ; elapsed = 00:01:30 . Memory (MB): peak = 2231.152 ; gain = 0.000
+add_force {/counter/reset} -radix hex {0 0ns}
+close_sim
+INFO: xsimkernel Simulation Memory Usage: 39684 KB (Peak: 39684 KB), Simulation CPU Usage: 36233 ms
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'counter'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/eldri/OneDrive/Documents/Georgia Tech/Sharc Lab/Learn_Verilog/eight_bit_counter/eight_bit_counter.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'counter' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/eldri/OneDrive/Documents/Georgia Tech/Sharc Lab/Learn_Verilog/eight_bit_counter/eight_bit_counter.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj counter_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/eldri/OneDrive/Documents/Georgia Tech/Sharc Lab/Learn_Verilog/eight_bit_counter/eight_bit_counter.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot counter_behav xil_defaultlib.counter xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot counter_behav xil_defaultlib.counter xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/eldri/OneDrive/Documents/Georgia Tech/Sharc Lab/Learn_Verilog/eight_bit_counter/eight_bit_counter.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "counter_behav -key {Behavioral:sim_1:Functional:counter} -tclbatch {counter.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source counter.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'counter_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 2231.688 ; gain = 0.000
+add_force {/counter/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+run 100 ns
+add_force {/counter/reset} -radix hex {0 0ns}
+run 100 ns
+add_force {/counter/mode} -radix hex {1 0ns}
+run 100 ns
+add_force {/counter/reset} -radix hex {0 0ns}
+add_force {/counter/mode} -radix hex {1 0ns}
+run 100 ns
+add_force {/counter/mode} -radix hex {0 0ns}
+run 100 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'counter'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/eldri/OneDrive/Documents/Georgia Tech/Sharc Lab/Learn_Verilog/eight_bit_counter/eight_bit_counter.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'counter' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/eldri/OneDrive/Documents/Georgia Tech/Sharc Lab/Learn_Verilog/eight_bit_counter/eight_bit_counter.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj counter_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/eldri/OneDrive/Documents/Georgia Tech/Sharc Lab/Learn_Verilog/eight_bit_counter/eight_bit_counter.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot counter_behav xil_defaultlib.counter xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot counter_behav xil_defaultlib.counter xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/eldri/OneDrive/Documents/Georgia Tech/Sharc Lab/Learn_Verilog/eight_bit_counter/eight_bit_counter.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "counter_behav -key {Behavioral:sim_1:Functional:counter} -tclbatch {counter.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source counter.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'counter_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 2232.711 ; gain = 0.000
+add_force {/counter/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/counter/reset} -radix hex {0 0ns}
+run 100 ns
+run 100 us
+restart
+INFO: [Wavedata 42-604] Simulation restarted
+add_force {/counter/clk} -radix hex {1 0ns} {0 50000ps} -repeat_every 100000ps
+add_force {/counter/reset} -radix hex {0 0ns}
+add_force {/counter/mode} -radix hex {1 0ns}
+run 100 us
+add_force {/counter/reset} -radix hex {1 0ns}
+run 100 us
+restart
+INFO: [Wavedata 42-604] Simulation restarted
+add_force {/counter/clk} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/counter/reset} -radix hex {1 0ns}
+run 100 ns
+add_force {/counter/reset} -radix hex {0 0ns}
+run 100 ns
+run 100 ns
+add_force {/counter/mode} -radix hex {0 0ns}
+run 100 ns
+run 100 ns
+run 100 ns
+add_force {/counter/reset} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+run 100 ns
+add_force {/counter/mode} -radix hex {1 0ns}
+run 100 ns
+save_wave_config {C:/Users/eldri/OneDrive/Documents/Georgia Tech/Sharc Lab/Learn_Verilog/eight_bit_counter/counter_behav.wcfg}
+add_files -fileset sim_1 -norecurse {{C:/Users/eldri/OneDrive/Documents/Georgia Tech/Sharc Lab/Learn_Verilog/eight_bit_counter/counter_behav.wcfg}}
+set_property xsim.view {{C:/Users/eldri/OneDrive/Documents/Georgia Tech/Sharc Lab/Learn_Verilog/eight_bit_counter/counter_behav.wcfg}} [get_filesets sim_1]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 17 04:56:25 2025...
