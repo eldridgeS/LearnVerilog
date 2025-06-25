@@ -1,5 +1,0 @@
-Time resolution is 1 ps
---------------------------------------------------
---- Starting Traffic Light Controller Testbench ---
---------------------------------------------------
-Time=0 | State=x | Timer= x | Sa=x, Sb=x | A: xxx (RGY) | B: xxx (RGY)
