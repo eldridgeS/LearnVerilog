@@ -1,0 +1,93 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Sun Jul 13 00:36:35 2025
+# Process ID         : 27416
+# Current directory  : C:/Users/eldri/OneDrive/Documents/Georgia Tech/Sharc Lab/Learn_Verilog/uart_fsm
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent23416 C:\Users\eldri\OneDrive\Documents\Georgia Tech\Sharc Lab\Learn_Verilog\uart_fsm\uart_fsm.xpr
+# Log file           : C:/Users/eldri/OneDrive/Documents/Georgia Tech/Sharc Lab/Learn_Verilog/uart_fsm/vivado.log
+# Journal file       : C:/Users/eldri/OneDrive/Documents/Georgia Tech/Sharc Lab/Learn_Verilog/uart_fsm\vivado.jou
+# Running On         : elsu
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : AMD Ryzen 9 8945HS w/ Radeon 780M Graphics
+# CPU Frequency      : 3992 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16422 MB
+# Swap memory        : 17179 MB
+# Total Virtual      : 33601 MB
+# Available Virtual  : 11839 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/eldri/OneDrive/Documents/Georgia Tech/Sharc Lab/Learn_Verilog/uart_fsm/uart_fsm.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config {C:/Users/eldri/OneDrive/Documents/Georgia Tech/Sharc Lab/Learn_Verilog/uart_fsm/uart_tb_behav.wcfg}
+source uart_tb.tcl
+run all
+add_bp {C:/Users/eldri/OneDrive/Documents/Georgia Tech/Sharc Lab/Learn_Verilog/uart_fsm/uart_fsm.srcs/sources_1/new/uart_tb.v} 88
+relaunch_sim
+run 20 ms
+relaunch_sim
+run 20 ms
+relaunch_sim
+run 20 ms
+relaunch_sim
+run 20 ms
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+run 20 ms
+relaunch_sim
+run 20 ms
+run 20 ms
+relaunch_sim
+run 20 ms
+relaunch_sim
+run 20 ms
+run 20 ms
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+relaunch_sim
+run 20 ms
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+close_sim
+launch_simulation
+open_wave_config {C:/Users/eldri/OneDrive/Documents/Georgia Tech/Sharc Lab/Learn_Verilog/uart_fsm/uart_tb_behav.wcfg}
+source uart_tb.tcl
+run 20 ms
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+close_sim
+launch_simulation
+open_wave_config {C:/Users/eldri/OneDrive/Documents/Georgia Tech/Sharc Lab/Learn_Verilog/uart_fsm/uart_tb_behav.wcfg}
+source uart_tb.tcl
+run 20 ms
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+current_wave_config {uart_tb_behav.wcfg}
+add_wave {{/uart_tb/dut/rx_FIFO/dout}} 
+save_wave_config {C:/Users/eldri/OneDrive/Documents/Georgia Tech/Sharc Lab/Learn_Verilog/uart_fsm/uart_tb_behav.wcfg}
+relaunch_sim
+run all
+current_wave_config {uart_tb_behav.wcfg}
+add_wave {{/uart_tb/dut/receiver/rx_dout}} 
+relaunch_sim
+run 20 ms
+save_wave_config {C:/Users/eldri/OneDrive/Documents/Georgia Tech/Sharc Lab/Learn_Verilog/uart_fsm/uart_tb_behav.wcfg}
+close_sim

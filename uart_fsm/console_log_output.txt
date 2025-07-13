@@ -1,0 +1,25 @@
+Time resolution is 1 ps
+[50000] Reset de-asserted. Starting test.
+[55000] Writing 0x55 to TX FIFO.
+[75000] Writing 0xaa to TX FIFO.
+[95000] Writing 0x0f to TX FIFO.
+[115000] Writing 0xf0 to TX FIFO.
+[135000] Writing 0x3c to TX FIFO.
+[155000] Writing 0xc3 to TX FIFO.
+[175000] Writing 0x12 to TX FIFO.
+[195000] Writing 0x34 to TX FIFO.
+[215000] Writing 0x56 to TX FIFO.
+[235000] Writing 0x78 to TX FIFO.
+[245000] All data written to TX FIFO. Waiting for transmission to complete.
+run 20 ms
+[8332855000] TX FIFO is empty. All data transmitted.
+[8337865000] Reading 0x00 from RX FIFO. Expected 0x55
+ERROR: Received 0x00, expected 0x55 for byte 0.
+[8337885000] Reading 0x00 from RX FIFO. Expected 0xaa
+ERROR: Received 0x00, expected 0xaa for byte 1.
+[8337905000] Reading 0x0f from RX FIFO. Expected 0x0f
+[8337925000] Reading 0xf0 from RX FIFO. Expected 0xf0
+[8337945000] Reading 0x3c from RX FIFO. Expected 0x3c
+[8337965000] Reading 0xc3 from RX FIFO. Expected 0xc3
+[8337985000] Reading 0x12 from RX FIFO. Expected 0x12
+[8338005000] Reading 0x34 from RX FIFO. Expected 0x34

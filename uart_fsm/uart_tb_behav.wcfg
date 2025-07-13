@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="uart_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="uart_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000000 us"></ZoomStartTime>
+      <ZoomEndTime time="4,095.000001 us"></ZoomEndTime>
+      <Cursor1Time time="200.000000 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="221"></NameColumnWidth>
+      <ValueColumnWidth column_width="131"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="16" />
+   <wvobject fp_name="/uart_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_tb/reset_n" type="logic">
+      <obj_property name="ElementShortName">reset_n</obj_property>
+      <obj_property name="ObjectShortName">reset_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_tb/w_data" type="array">
+      <obj_property name="ElementShortName">w_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">w_data[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_tb/wr_uart" type="logic">
+      <obj_property name="ElementShortName">wr_uart</obj_property>
+      <obj_property name="ObjectShortName">wr_uart</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_tb/tx_full" type="logic">
+      <obj_property name="ElementShortName">tx_full</obj_property>
+      <obj_property name="ObjectShortName">tx_full</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_tb/dut/transmitter/tx" type="logic">
+      <obj_property name="ElementShortName">tx</obj_property>
+      <obj_property name="ObjectShortName">tx</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_tb/dut/receiver/rx" type="logic">
+      <obj_property name="ElementShortName">rx</obj_property>
+      <obj_property name="ObjectShortName">rx</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_tb/rx_empty" type="logic">
+      <obj_property name="ElementShortName">rx_empty</obj_property>
+      <obj_property name="ObjectShortName">rx_empty</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_tb/rd_uart" type="logic">
+      <obj_property name="ElementShortName">rd_uart</obj_property>
+      <obj_property name="ObjectShortName">rd_uart</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_tb/r_data" type="array">
+      <obj_property name="ElementShortName">r_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">r_data[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_tb/tx_idx" type="array">
+      <obj_property name="ElementShortName">tx_idx[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_idx[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_tb/rx_idx" type="array">
+      <obj_property name="ElementShortName">rx_idx[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_idx[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_tb/dut/baud_rate_generator/done" type="logic">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_tb/errors" type="array">
+      <obj_property name="ElementShortName">errors[31:0]</obj_property>
+      <obj_property name="ObjectShortName">errors[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_tb/dut/receiver/b_reg" type="array">
+      <obj_property name="ElementShortName">b_reg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">b_reg[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/uart_tb/dut/receiver/rx_dout" type="array">
+      <obj_property name="ElementShortName">rx_dout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_dout[7:0]</obj_property>
+   </wvobject>
+</wave_config>
